@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://whyte--demo01.sandbox.my.salesforce-sites.com/webforms/lightning/lightning.out.js"></script>
+
+<div id="lightningLocator"></div>
+
+<script>
+    $Lightning.use("c:WebFormApp",
+        function() {
+            $Lightning.createComponent(
+                "c:WebForm",
+                { flowName: "WebFormSignupCompetition"},                  
+                "lightningLocator",   
+                function(cmp) {}
+            );
+        },
+        'https://whyte--demo01.sandbox.my.salesforce-sites.com/webforms'  //Site endpoint
+    );
+</script>
+</html>
